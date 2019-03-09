@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/album_art_image_view"/>
+    <TextView
+            android:id="@+id/detail_song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/album_art_image_view"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center" />
+
+    <TextView
+            android:id="@+id/detail_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_song_title"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"/>
+
+    <TextView
+            android:id="@+id/detail_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_artist"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"/>
+    <TextView
+            android:id="@+id/detail_playcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_album"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"/>
+    <Button
+            android:text="Add Song To Playlist"
+            android:layout_below="@id/detail_playcount"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" android:id="@+id/add_song_button"/>
+
+</RelativeLayout>
